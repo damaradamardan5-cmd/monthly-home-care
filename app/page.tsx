@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { SiteShell } from "./components/site-shell";
 import { SectionHeading } from "./components/section-heading";
+import { CheckoutButton } from "./components/checkout-button";
 
 const features = [
   {
@@ -51,9 +52,7 @@ export default function Home() {
               HomeKeep by SALAH delivers polished cleaning, trusted home watching, and seamless support designed for modern households.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
-              <Link href="/pricing" className="rounded-full bg-blue-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-600/20 transition hover:bg-blue-700">
-                Start Free Trial
-              </Link>
+              <CheckoutButton>Start Free Trial</CheckoutButton>
               <Link href="/contact" className="rounded-full border border-slate-200 bg-white px-6 py-3 text-sm font-semibold text-slate-700 shadow-sm transition hover:border-blue-200 hover:text-blue-600">
                 Contact Us
               </Link>
